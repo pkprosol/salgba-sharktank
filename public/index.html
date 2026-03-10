@@ -385,7 +385,7 @@
     /* ─── VALUE PROPS ─── */
     .value-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 32px;
     }
     .value-card {
@@ -915,8 +915,8 @@
   <section class="section section-dark">
     <div class="container">
       <p class="section-label">What Every Contestant Gets</p>
-      <h2 class="section-title" style="color:var(--white);">Three Touchpoints. One Room.</h2>
-      <p class="section-subtitle" style="color:var(--vi-gray);">The pitch is just the opening. What follows is where deals start.</p>
+      <h2 class="section-title" style="color:var(--white);">Every Contestant Walks Away with This</h2>
+      <p class="section-subtitle" style="color:var(--vi-gray);">Your $12,500 participation fee buys more than a pitch slot &mdash; it buys a pipeline.</p>
       <div class="value-grid">
         <div class="value-card">
           <div class="value-icon">
@@ -927,17 +927,38 @@
         </div>
         <div class="value-card">
           <div class="value-icon">
-            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
           </div>
-          <h3 style="color:var(--white);">Private Judge Debriefs</h3>
-          <p style="color:var(--vi-gray);">Each judge commits to a private post-event debrief. Get feedback from a public purchaser perspective.</p>
+          <h3 style="color:var(--white);">Warm Lead List</h3>
+          <p style="color:var(--vi-gray);">The voting app includes a &ldquo;Contact Me&rdquo; button &mdash; every interested audience member becomes a qualified lead.</p>
         </div>
         <div class="value-card">
           <div class="value-icon">
-            <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 7V5a4 4 0 00-8 0v2"/></svg>
           </div>
-          <h3 style="color:var(--white);">Live Audience Feedback</h3>
-          <p style="color:var(--vi-gray);">See exactly how your message lands with the people who buy. 250+ administrators voting on your solution gives you data no focus group can match.</p>
+          <h3 style="color:var(--white);">Booth &amp; Table Display</h3>
+          <p style="color:var(--vi-gray);">Set up a presence at the event for follow-up conversations, demos, and relationship-building.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+          </div>
+          <h3 style="color:var(--white);">Private Rehearsal</h3>
+          <p style="color:var(--vi-gray);">Rehearse with Al Lewis, founder of Validation Institute and author of the two seminal books on employee population health services.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <h3 style="color:var(--white);">Audience Comments + Contest</h3>
+          <p style="color:var(--vi-gray);">Audience members leave actionable feedback. Award $100 to the most insightful comment and turn feedback into strategy.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3 style="color:var(--white);">Private Judge Debriefs</h3>
+          <p style="color:var(--vi-gray);">Each judge commits to a private post-event debrief. Get candid, expert-level feedback on your solution.</p>
         </div>
       </div>
     </div>
@@ -997,7 +1018,7 @@
             What does $12,500 include?
           </div>
           <div class="faq-a">
-            <p>A pitch slot in front of 250+ public sector benefits leaders, live audience voting, private post-event debriefs with each judge, direct exposure to the largest gathering of state and local benefits administrators in the country, and a chance to win $25,000 in investment or product credits.</p>
+            <p>A 5-minute pitch to 250+ public sector benefits leaders, live Q&amp;A with judges, a warm lead list via the voting app, booth &amp; table display, a private rehearsal with Al Lewis, audience feedback with a comments contest, private post-event debriefs with each judge, and a chance to win $25,000 in investment or product credits.</p>
           </div>
         </div>
         <div class="faq-item">
