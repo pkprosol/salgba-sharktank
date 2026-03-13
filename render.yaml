@@ -2,7 +2,10 @@ services:
   - type: web
     name: salgba-sharktank
     runtime: static
-    buildCommand: ""
+    buildCommand: bash build.sh
+    envVars:
+      - key: SPOTS_REMAINING
+        value: "4"
     staticPublishPath: ./public
     headers:
       - path: /*

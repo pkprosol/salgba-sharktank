@@ -712,9 +712,33 @@
       .top-bar p { font-size: 0.65rem; }
       .nav-cta { padding: 8px 16px; font-size: 0.8rem; }
     }
+
+    /* ─── SPOTS REMAINING BANNER ─── */
+    .spots-banner {
+      background: linear-gradient(90deg, #b91c1c, #dc2626, #b91c1c);
+      color: #fff; text-align: center; padding: 18px 16px;
+      font-family: var(--font-headline);
+      animation: pulse-bg 2s ease-in-out infinite;
+    }
+    .spots-banner .spots-num {
+      font-size: 28px; font-weight: 800;
+      display: inline; margin: 0 6px;
+    }
+    .spots-banner .spots-text {
+      font-size: 18px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;
+    }
+    @keyframes pulse-bg {
+      0%, 100% { background: linear-gradient(90deg, #b91c1c, #dc2626, #b91c1c); }
+      50% { background: linear-gradient(90deg, #991b1b, #b91c1c, #991b1b); }
+    }
   </style>
 </head>
 <body>
+
+  <!-- SPOTS REMAINING BANNER -->
+  <div class="spots-banner">
+    <span class="spots-text">Only <span class="spots-num">%%SPOTS_REMAINING%%</span> Spots Left!</span>
+  </div>
 
   <!-- TOP BAR -->
   <div class="top-bar">
@@ -901,7 +925,7 @@
     <div class="container">
       <p class="section-label">The Process</p>
       <h2 class="section-title">From Application to Stage in Four Steps</h2>
-      <p class="section-subtitle">Only four spots. We keep it tight so every contestant gets the room's full attention.</p>
+      <p class="section-subtitle">Only <strong>%%SPOTS_REMAINING%%</strong> spots left. We keep it tight so every contestant gets the room's full attention.</p>
       <div class="process-grid">
         <div class="process-step">
           <h3>Apply &amp; Reserve</h3>
@@ -976,7 +1000,7 @@
   <!-- CTA BANNER -->
   <section class="cta-banner">
     <div class="container">
-      <h2>Four Slots. One Stage. 500+ Buyers.</h2>
+      <h2>Only <span class="accent">%%SPOTS_REMAINING%%</span> Slots Left. One Stage. 500+ Buyers.</h2>
       <p>This isn't a conference booth. It's a direct line to the public sector leaders who control purchasing. Apply now.</p>
       <a href="https://buy.stripe.com/9B68wQ5vo3O57C30v257W0F" class="btn-white">Apply Now &rarr;</a>
     </div>
